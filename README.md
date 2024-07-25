@@ -38,7 +38,7 @@ Você pode copiar e colar as configurações fornecidas acima diretamente no seu
 - **JetBrains Mono**: Fonte usada no editor e terminal.
   - Download direto: [JetBrainsMono.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip)
 - **Inter**: Fonte usada para o tema APC.
-  - Download direto: [Inter.zip]([https://rsms.me/inter/](https://rsms.me/inter/download/))
+  - Download direto: [Inter.zip](https://rsms.me/inter/download/)
 
 ## Extensões usadas
 
