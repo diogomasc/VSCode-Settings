@@ -36,17 +36,17 @@ O arquivo `settings.json` será aberto para edição.
 Você pode copiar e colar as configurações fornecidas acima diretamente no seu `settings.json`. Certifique-se de instalar as seguintes fontes para obter a melhor experiência visual:
 
 - **JetBrains Mono**: Fonte usada no editor e terminal.
-  - Download direto: [JetBrainsMono.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip)
+  - Download direto: [JetBrainsMono.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip="_blank"})
 - **Inter**: Fonte usada para o tema APC.
-  - Download direto: [Inter.zip](https://rsms.me/inter/download/)
+  - Download direto: [Inter.zip](https://rsms.me/inter/download/="_blank"})
 
 ## Extensões usadas
 
 - **APC Customize UI++**: Para personalizar ainda mais a interface do Visual Studio Code.
-  - Baixe a extensão em [APC Customize UI++](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.apccustomizeui).
+  - Baixe a extensão em [APC Customize UI++](https://marketplace.visualstudio.com/items?itemName=drcika.apc-extension="_blank"}).
   
 - **Min Theme**: Um tema elegante para o Visual Studio Code.
-  - Baixe a extensão em [Min Theme](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.min-theme).
+  - Baixe a extensão em [Min Theme](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.min-theme="_blank"}).
 
 - **Symbols**: Adiciona ícones elegantes para melhorar a experiência visual no VS Code.
-  - Baixe a extensão em [Symbols](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.symbols).
+  - Baixe a extensão em [Symbols](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.symbols="_blank"}).
