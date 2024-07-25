@@ -1,0 +1,69 @@
+{
+  // Configurações gerais
+  "window.zoomLevel": 0.1,
+  "window.menuBarVisibility": "compact",
+  "symbols.hidesExplorerArrows": false,
+  "breadcrumbs.enabled": false,
+  "workbench.colorTheme": "Min Dark",
+  "workbench.iconTheme": "symbols",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.labelFormat": "short",
+  "workbench.statusBar.visible": false,
+  "workbench.layoutControl.enabled": false,
+  
+
+  // Configurações do editor
+  "editor.renderLineHighlight": "gutter",
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.6,
+  "editor.semanticHighlighting.enabled": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": []
+  },
+
+  // Configurações da árvore de arquivos
+  "explorer.compactFolders": false,
+  "explorer.sortOrder": "foldersNestsFiles",
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-*, bun.lockb, nest*, package-lock*",
+    "tailwind.config.*": "tailwind.config*, postcss.config*",
+    ".env.local": ".env*",
+    ".env": ".env*"
+  },
+  "workbench.tree.indent": 14,
+
+  // Configurações personalizadas (APC)
+  "apc.electron": {
+    "titleBarStyle": "hiddenInset",
+    "opacity": 1,
+    "vibrancy": "dark",
+    "frame": false
+  },
+  "apc.header": {
+    "height": 36
+  },
+  "apc.listRow": {
+    "height": 24
+  },
+  "apc.font.family": "Inter",
+  "apc.stylesheet": {
+    ".editor-actions": "display: none",
+    ".pane-header": "padding: 0 8px",
+    ".split-view-view:first-child .pane-header": "display: none !important;",
+    ".monaco-list-row": "border-radius: 4px;",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
+  },
+
+  // Configurações do terminal
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+
+  // Outras configurações (git, etc.)
+  "git.enableSmartCommit": true
+}
