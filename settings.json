@@ -1,32 +1,34 @@
 {
-  // Configurações gerais
+  // Configurações Gerais
   "window.zoomLevel": 0.1,
-  "window.menuBarVisibility": "compact",
   "symbols.hidesExplorerArrows": false,
+  "symbols.files.associations": {
+    "*.service.ts": "ts"
+  },
   "breadcrumbs.enabled": false,
-  "workbench.colorTheme": "Min Dark",
+  "workbench.colorTheme": "GitHub Dark",
   "workbench.iconTheme": "symbols",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.labelFormat": "short",
   "workbench.statusBar.visible": false,
-  "workbench.layoutControl.enabled": false,
-  
-
-  // Configurações do editor
+  "explorer.confirmPasteNative": false,
+  // Configurações do Editor
   "editor.renderLineHighlight": "gutter",
-  "editor.fontLigatures": true,
   "editor.minimap.enabled": false,
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
   "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.lineHeight": 1.6,
   "editor.semanticHighlighting.enabled": false,
+  "editor.parameterHints.enabled": true,
+  "editor.formatOnSave": true,
+  "editor.accessibilitySupport": "off",
   "editor.tokenColorCustomizations": {
     "textMateRules": []
   },
-
-  // Configurações da árvore de arquivos
+  // Configurações da Árvore de Arquivos
   "explorer.compactFolders": false,
   "explorer.sortOrder": "foldersNestsFiles",
   "explorer.fileNesting.enabled": true,
@@ -37,8 +39,7 @@
     ".env": ".env*"
   },
   "workbench.tree.indent": 14,
-
-  // Configurações personalizadas (APC)
+  // Configurações Personalizadas (APC)
   "apc.electron": {
     "titleBarStyle": "hiddenInset",
     "opacity": 1,
@@ -53,17 +54,60 @@
   },
   "apc.font.family": "Inter",
   "apc.stylesheet": {
-    ".editor-actions": "display: none",
+    // ".editor-actions": "display: none", // Desabilita as ações rapida do editor do canto superior direito
     ".pane-header": "padding: 0 8px",
     ".split-view-view:first-child .pane-header": "display: none !important;",
     ".monaco-list-row": "border-radius: 4px;",
     ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
   },
-
-  // Configurações do terminal
+  // Configurações do Terminal
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-
-  // Outras configurações (git, etc.)
-  "git.enableSmartCommit": true
+  // Configurações do Git
+  "git.ignoreMissingGitWarning": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  // Configurações do GitLens
+  "gitlens.advanced.messages": {
+    "suppressGitMissingWarning": true,
+    "suppressLineUncommittedWarning": true
+  },
+  "gitlens.defaultDateFormat": null,
+  "gitlens.defaultTimeFormat": null,
+  "gitlens.defaultDateShortFormat": null,
+  // Configurações de Formatação
+  "files.autoSave": "onWindowChange",
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always",
+    "quickfix.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // Configurações de Formatação de Linguagens
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  // Configurações de Temas da Barra de Tarefas/Ações do VS Code
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.layoutControl.enabled": false,
+  // Configurações de Segurança
+  "security.workspace.trust.untrustedFiles": "open",
+  // Configurações de Remoto
+  "remote.restoreForwardedPorts": false,
+  // Configurações de Live Server
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  // Configurações de Live Share
+  "liveshare.connectionMode": "relay"
 }
