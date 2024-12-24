@@ -1,34 +1,43 @@
 {
-  // Configurações Gerais
-  "window.zoomLevel": 0.1,
-  "symbols.hidesExplorerArrows": false,
-  "symbols.files.associations": {
-    "*.service.ts": "ts"
-  },
-  "breadcrumbs.enabled": false,
+  // Visual do editor
   "workbench.colorTheme": "GitHub Dark",
   "workbench.iconTheme": "symbols",
+  "workbench.productIconTheme": "fluent-icons",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.labelFormat": "short",
   "workbench.statusBar.visible": false,
-  "explorer.confirmPasteNative": false,
-  // Configurações do Editor
+  "workbench.tree.indent": 14,
+  // Customização da interface
+  "window.titleBarStyle": "custom",
+  "window.menuBarVisibility": "visible",
+  "window.customMenuBarAltFocus": false,
+  "workbench.layoutControl.enabled": false,
+  "window.density.editorTabHeight": "compact",
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.expandMode": "singleClick",
+  // Configurações do editor
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 20,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": true,
   "editor.renderLineHighlight": "gutter",
-  "editor.minimap.enabled": false,
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
-  "editor.fontFamily": "JetBrains Mono",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 14,
-  "editor.lineHeight": 1.6,
   "editor.semanticHighlighting.enabled": false,
   "editor.parameterHints.enabled": true,
   "editor.formatOnSave": true,
+  "editor.defaultFormatter": "biomejs.biome",
   "editor.accessibilitySupport": "off",
-  "editor.tokenColorCustomizations": {
-    "textMateRules": []
-  },
-  // Configurações da Árvore de Arquivos
+  "editor.padding.top": 8,
+  "editor.padding.bottom": 8,
+  "editor.hover.delay": 200,
+  // Terminal
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "JetBrains Mono, Fira Code",
+  "terminal.integrated.cursorStyle": "line",
+  // Explorador de arquivos
   "explorer.compactFolders": false,
   "explorer.sortOrder": "foldersNestsFiles",
   "explorer.fileNesting.enabled": true,
@@ -38,54 +47,19 @@
     ".env.local": ".env*",
     ".env": ".env*"
   },
-  "workbench.tree.indent": 14,
-  // Configurações Personalizadas (APC)
-  "apc.electron": {
-    "titleBarStyle": "hiddenInset",
-    "opacity": 1,
-    "vibrancy": "dark",
-    "frame": false
+  "explorer.confirmPasteNative": false,
+  // Símbolos e breadcrumbs
+  "symbols.hidesExplorerArrows": false,
+  "symbols.files.associations": {
+    "*.service.ts": "ts"
   },
-  "apc.header": {
-    "height": 36
-  },
-  "apc.listRow": {
-    "height": 24
-  },
-  "apc.font.family": "Inter",
-  "apc.stylesheet": {
-    // ".editor-actions": "display: none", // Desabilita as ações rapida do editor do canto superior direito
-    ".pane-header": "padding: 0 8px",
-    ".split-view-view:first-child .pane-header": "display: none !important;",
-    ".monaco-list-row": "border-radius: 4px;",
-    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
-  },
-  // Configurações do Terminal
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  // Configurações do Git
+  "breadcrumbs.enabled": false,
+  // Git
   "git.ignoreMissingGitWarning": true,
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "git.autofetch": true,
-  // Configurações do GitLens
-  "gitlens.advanced.messages": {
-    "suppressGitMissingWarning": true,
-    "suppressLineUncommittedWarning": true
-  },
-  "gitlens.defaultDateFormat": null,
-  "gitlens.defaultTimeFormat": null,
-  "gitlens.defaultDateShortFormat": null,
-  // Configurações de Formatação
-  "files.autoSave": "onWindowChange",
-  "editor.defaultFormatter": "biomejs.biome",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "always",
-    "quickfix.biome": "explicit",
-    "source.organizeImports.biome": "explicit"
-  },
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  // Configurações de Formatação de Linguagens
+  // Formatação específica por linguagem
   "[javascript]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
@@ -98,16 +72,19 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  // Configurações de Temas da Barra de Tarefas/Ações do VS Code
-  "workbench.productIconTheme": "fluent-icons",
-  "workbench.layoutControl.enabled": false,
-  // Configurações de Segurança
-  "security.workspace.trust.untrustedFiles": "open",
-  // Configurações de Remoto
-  "remote.restoreForwardedPorts": false,
-  // Configurações de Live Server
-  "liveServer.settings.donotShowInfoMsg": true,
-  "liveServer.settings.donotVerifyTags": true,
-  // Configurações de Live Share
-  "liveshare.connectionMode": "relay"
+  // Code Actions
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always",
+    "quickfix.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+  // Salvamento automático
+  "files.autoSave": "onWindowChange",
+  // Customizações adicionais para melhor visual
+  "workbench.list.smoothScrolling": true,
+  "editor.smoothScrolling": true,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.tabSizing": "shrink"
 }
